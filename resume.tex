@@ -1,0 +1,194 @@
+%-------------------------
+% Author:   Kyle Goetke
+% Based on: https://github.com/sb2nov/resume and https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+% \usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\input{glyphtounicode}
+\usepackage[pdftex, pdfauthor={Kyle Goetke}, pdftitle={Kyle Goetke Resume}, pdfsubject={Kyle Goetke}]{hyperref}
+
+%----------FONT----------
+\usepackage[default]{opensans}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Each section header (under <hr>)
+\titleformat{\section}{
+	\vspace{0pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generated PDF is machine readable/ATS friendly
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+% Each bullet point under job listings
+\newcommand{\resumeItem}[1]{
+    \item{
+        {#1 \vspace{-1pt}}
+    }
+}
+
+% Each job listing
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+		\begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+			\textbf{#1} & #2 \\
+			\textit{#3} & \textit{ #4} \\
+		\end{tabular*}\vspace{-7pt}
+}
+
+% Each project listing
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+		#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\footnotesize$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+
+% End of each job listing
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\definecolor{HeaderColor}{HTML}{4285f4}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------Name + Contact Info----------
+\begin{center}
+	\textbf{\LARGE \scshape Kyle Goetke} \\ \vspace{5pt}
+	\large \href{mailto:kyle.goetke@gmail.com}{kyle.goetke@gmail.com}~ $|$ ~908-499-8047~ $|$ ~\href{https://linkedin.com/in/kyle-goetke}{linkedin.com/in/kyle-goetke}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\textcolor{HeaderColor}{\textbf{\large Education}}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{B.S. Computing and Security Technology $|$ {\normalfont Drexel University}}{Expected Graduation: 2025}
+{Philadelphia, PA}{\normalfont Cumulative GPA: 3.90} \vspace{-2pt}
+\begin{itemize}[leftmargin=0in, label={}]
+	{\item{
+		\mbox{\textbf {Relevant Coursework:}} \vspace{4pt} \\
+		\begin{tabular}{l l l}
+			{Computing and Informatics Design I, II, III} & {~~~~~~~~~~~~Network Administration} & {~~~~~~~~~~~~Windows Server} \\
+			{Applied Data Management} & {~~~~~~~~~~~~Computer Forensics}     & {~~~~~~~~~~~~Systems Analysis} 
+		\end{tabular}
+	}}
+\end{itemize}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{\textcolor{HeaderColor}{\textbf{\large Experience}}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Associate DevOps Engineer}{September 2021 -- March 2022}
+{Health Union}{Philadelphia, PA}
+\resumeItemListStart
+\resumeItem{Utilized Amazon Web Services and Docker to construct a CI/CD service and automate IaC deploys}
+\resumeItem{Adhered to Agile Scrum development practices to guide development and task completion}
+\resumeItem{Created a comprehensive reference guide designed for company–wide use}
+\resumeItemListEnd
+
+\resumeSubheading
+{IT Intern}{June 2019 -- June 2021}
+{Union County Vocational–Technical Schools}{Scotch Plains, NJ}
+\resumeItemListStart
+\resumeItem{Resolved issues across a campus–wide network including hardware repair and software configuration}
+\resumeItem{Facilitated software delivery through remote and physical systems}
+\resumeItem{Trained eight new interns to succeed in the following year}
+\resumeItem{Collaborated with faculty to find solutions for issues with productivity and connectivity}
+\resumeItemListEnd
+
+\resumeSubheading
+{Volunteer}{July 2017 \& July 2019}
+{Appalachia Service Project}{Virginia \& West Virginia}
+\resumeItemListStart
+\resumeItem{Helped repair homes and improve living conditions for low–income families}
+\resumeItem{Cooperated with group members to achieve our goal in a limited time frame}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textcolor{HeaderColor}{\textbf{\large Technical Project}}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Developer -- Platform Panic}{January 2021 -- June 2021}
+{}{} \vspace{-16pt}
+\resumeItemListStart
+\resumeItem{Developed a game inspired by classic platformers using HTML, CSS, and JavaScript}
+\resumeItem{Utilized Agile development practices to manage group workflow}
+\resumeItem{Collaborated, committed changes, and coordinated work using Git}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS AND CERTS-----------
+\section{\textcolor{HeaderColor}{\textbf{\large Skills and Certifications}}}
+
+\begin{tabular}{l l}
+	{ Languages: } & { ~~~~Python, HTML, CSS, JavaScript} \\
+	{ Tools: } & { ~~~~Visual Studio Code, VirtualBox, Git, Microsoft Office} \\
+	{ Certifications: } & { ~~~~IC3 Digital Literacy, CompTIA IT Fundamentals, Microsoft Office Specialist} 
+\end{tabular}
+
+%-----------HONORS-----------
+\section{\textcolor{HeaderColor}{\textbf{\large Honors \& Awards}}}
+\begin{itemize}[leftmargin=0in, label={}]
+	{\item{
+		\mbox{Dean’s List, Drexel University, 2020 -- Present}\\
+		\mbox{A. J. Drexel Scholarship, Drexel University, 2020 -- Present}\\
+		\mbox{Eagle Scout, Troop 63 New Providence, November 2019}
+	}}
+\end{itemize}
+
+%-----------Activities-----------
+\section{\textcolor{HeaderColor}{\textbf{\large Activities \& Interests}}}
+\begin{itemize}[leftmargin=0in, label={}]
+	{\item{
+		\begin{tabular}{l l l}
+			{Boy Scouts of America Troop 63, 2013 -- 2019} & {~~~~~~~~~~~~~~~~~~~~~~~AIT Coding Club: Club Officer, 2016 -- 2020} \\
+			{NPHS Marching Band \& Drumline, 2016 -- 2020} & {~~~~~~~~~~~~~~~~~~~~~~~Drexel Gaming Association, 2020 -- Present}
+		\end{tabular}
+	}}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
