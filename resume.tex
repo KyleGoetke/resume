@@ -1,7 +1,6 @@
 %-------------------------
 % Author:   Kyle Goetke
 % Based on: https://github.com/sb2nov/resume and https://github.com/jakegut/resume
-% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -91,45 +90,59 @@
 \definecolor{HeaderColor}{HTML}{4285f4}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
-%----------Name + Contact Info----------
-% \begin{center}
-% 	\textbf{\LARGE \scshape Kyle Goetke} \\ \vspace{5pt}
-% 	\large \href{mailto:kyle.goetke@gmail.com}{kyle.goetke@gmail.com}~ $|$ ~908-499-8047~ $|$ ~\href{https://linkedin.com/in/kyle-goetke}{linkedin.com/in/kyle-goetke}~ $|$ ~\href{https://github.com/kylegoetke}{github.com/kylegoetke}
-% \end{center}
 
 \begin{center}
 	\textbf{\LARGE \scshape Kyle Goetke} \\ \vspace{5pt}
 	\large \href{mailto:kyle.goetke@gmail.com}{kyle.goetke@gmail.com}~ $|$ ~908-499-8047~ $|$ ~\href{https://kylegoetke.github.io}{kylegoetke.github.io}
+    % \large [Email]~ $|$ ~[Phone Number]~ $|$ ~[Website URL]
 \end{center}
 
 %-----------EDUCATION-----------
 \section{\textcolor{HeaderColor}{\textbf{\large Education}}}
 \resumeSubHeadingListStart
 \resumeSubheading
-{B.S. Computing and Security Technology}{Expected Graduation: 2025}
-{Drexel University -- Philadelphia, PA}{\normalfont Cumulative GPA: 3.92} \vspace{-2pt}
+{B.S. Computing and Security Technology}{Expected Graduation: June 2025}
+{Drexel University -- Philadelphia, PA}{\normalfont Cumulative GPA: 3.90} \vspace{-2pt}
 \resumeSubHeadingListEnd
 
 %-----------SKILLS AND CERTS-----------
 \section{\textcolor{HeaderColor}{\textbf{\large Skills \& Certifications}}}
 
 \begin{tabular}{l l}
-	{ Languages: } & { ~~~~Python, PowerShell, HTML, CSS, JavaScript} \\
-	{ Tools: } & { ~~~~Visual Studio Code, VirtualBox, Git, Microsoft Office} \\
-	{ Certifications: } & { ~~~~IC3 Digital Literacy, CompTIA IT Fundamentals, Microsoft Office Specialist}
+	{ Languages: } & { ~~~~Python, PowerShell, Bash, HTML, CSS, JavaScript}\\
+	{ Tools: } & { ~~~~Visual Studio Code, Jira, VirtualBox, Docker, Git, QRadar, Microsoft Office}\\
+	{ Certifications: } & { ~~~~Microsoft Office Specialist, IC3 Digital Literacy, CompTIA IT Fundamentals}
 \end{tabular}
 
 %-----------PROFESSIONAL EXPERIENCE-----------
 \section{\textcolor{HeaderColor}{\textbf{\large Professional Experience}}}
 \resumeSubHeadingListStart
 \resumeSubheading
+{Computer Engineer}{October 2023 -- June 2024}
+{Naval Sea Systems Command (NAVSEA)}{Philadelphia, PA}
+\resumeItemListStart
+\resumeItem{Provided mission-critical pierside and underway technical services for ships nationwide}
+\resumeItem{Installed and tested shipboard computer hardware to facilitate a generational system upgrade}
+\resumeItem{Contributed to hardware and incident response specifications for use by end users}
+% \resumeItem{Provided mission-critical pierside and underway technical services for ships nationwide}
+% \resumeItem{Conducted market analysis and prepared PCB component purchase orders}
+\resumeItem{Conducted market analysis and interfaced with vendors for future acquisition of PCB components}
+% learned about custom system and operate and do tasks on top of that - adds depth
+
+% \resumeItem{Maintained a Secret level security clearance}
+\resumeItemListEnd
+
+\resumeSubheading
 {Security Analyst}{September 2022 -- March 2023}
 {Susquehanna International Group}{Bala Cynwyd, PA}
 \resumeItemListStart
 \resumeItem{Automated phishing email detection, preventing dozens of emails from reaching end users weekly}
+\resumeItem{Investigated and responded to staged incidents, active threats, and policy violations}
+\resumeItem{Carried out regular reviews of potentially malicious emails and analyzed IOCs to prevent attacks}
+\resumeItem{Onboarded and trained Drexel co-ops with a variety of technical backgrounds}
+\resumeItem{Designed and implemented a PowerShell solution to automate adjustments to SIEM rule attributes, removing this task from analysts' weekly responsibilities}
 % This is the HTM* campaign, maybe I should be more technical? \\
 % Also, not sure which of the following is better, or maybe neither are particularly great
 % \resumeItem{Provided regular support in investigating active security threats and policy violations **}
@@ -138,29 +151,16 @@
 % \resumeItem{Provided regular support in investigating policy violations and both staged and active security threats}
 % \resumeItem{Provided regular support in investigating active security threats and policy violations while holding active roles when responding to staged and \textbf{active} incidents \textbf{in real time}}
 % \resumeItem{Investigated and responded to policy violations as well as both staged and active incidents}
-\resumeItem{Investigated and responded to staged incidents, active threats, and policy violations}
-\resumeItem{Designed and implemented a PowerShell solution to automate adjustments to SIEM rule attributes, removing this task from analysts' weekly responsibilities}
-\resumeItem{Carried out regular reviews of potentially malicious emails and analyzed IOCs to prevent attacks}
-\resumeItem{Onboarded and trained Drexel co-ops with a variety of technical backgrounds}
 \resumeItemListEnd
 
 \resumeSubheading
 {Associate DevOps Engineer}{September 2021 -- March 2022}
 {Health Union}{Philadelphia, PA}
 \resumeItemListStart
-\resumeItem{Utilized Amazon Web Services and Docker to construct a CI/CD service and automate IaC deployment}
+\resumeItem{Constructed a CI/CD service and automated IaC deployment utilizing Amazon Web Services and Docker}
 \resumeItem{Led the development of a comprehensive guide for company-wide use, tailored to non-technical users}
 \resumeItem{Adhered to Agile Scrum development practices to guide development and task completion}
 \resumeItem{Managed infrastructure for over forty websites using Terraform, resulting in increased reliability and consistency in deployment}
-\resumeItemListEnd
-
-\resumeSubheading
-{IT Intern}{June 2019 -- June 2021}
-{Union County Vocational-Technical Schools}{Scotch Plains, NJ}
-\resumeItemListStart
-\resumeItem{Resolved issues across a campus-wide network including hardware repair and software configuration}
-\resumeItem{Trained eight new interns to prepare them for success in the role throughout the following year}
-\resumeItem{Collaborated with faculty across the school district to address productivity and connectivity issues}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -173,37 +173,19 @@
 {Platform Panic (term project)}{Philadelphia, PA}
 \resumeItemListStart
 \resumeItem{Developed a game inspired by classic platformers using HTML, CSS, and JavaScript}
-\resumeItem{Utilized Agile development practices to manage long term group workflow and distribution of tasks}
+\resumeItem{Managed long term group workflow and distribution of tasks by utilizing Agile development practices}
 \resumeItem{Presented and demonstrated the completed game to a group of peers, receiving feedback and criticism}
-\resumeItemListEnd
-
-\resumeSubheading
-{Volunteer}{July 2017 \& July 2019}
-{Appalachia Service Project}{Virginia \& West Virginia}
-\resumeItemListStart
-\resumeItem{Helped repair homes and improve living conditions for low-income families}
-\resumeItem{Cooperated with team members to achieve all of our goals in a limited time frame}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-%-----------HONORS-----------
-% \section{\textcolor{HeaderColor}{\textbf{\large Honors \& Awards}}}
-% \begin{itemize}[leftmargin=0in, label={}]
-% 	{\item{
-% 		\mbox{Dean's List $|$ Drexel University, Fall 2020 -- Present}\\
-% 		\mbox{A. J. Drexel Scholarship $|$ Drexel University, Fall 2020 -- Present}\\
-% 		\mbox{Eagle Scout $|$ Troop 63 New Providence, November 2019}
-% 	}}
-% \end{itemize}
-
 %-----------Activities-----------
-\section{\textcolor{HeaderColor}{\textbf{\large Activities \& Interests}}}
+\section{\textcolor{HeaderColor}{\textbf{\large Extracurricular Activities}}}
 \begin{itemize}[leftmargin=0in, label={}]
 	{\item{
-		\begin{tabular}{l l l}
-		        {Boy Scouts of America -- Eagle Scout, 2013 -- 2019} & {~~~~~~~~~~~~~~~~~~~~~~~AIT Coding Club -- Officer, 2016 -- 2020} \\
-			    {NPHS Marching Band \& Drumline, 2016 -- 2020} & {~~~~~~~~~~~~~~~~~~~~~~~Drexel Pep Band, 2022 -- Present}
+		\begin{tabular}{l l}
+		        {Boy Scouts of America -- Eagle Scout, 2013 -- 2019} & {~~~~~~~~~~~~~~~~~~Drexel Pep Band, 2022 -- Present}\\
+			    {NPHS Marching Band \& Drumline, 2016 -- 2020} & {~~~~~~~~~~~~~~~~~~Drexel CyberDragons, 2023 -- Present}
 		\end{tabular}
 	}}
 \end{itemize}
